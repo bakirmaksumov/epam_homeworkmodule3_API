@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "0af63941-9e85-443f-b4fc-4295ebaee927",
+		"name": "requestAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44372/api/MainVisitors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44372/api/MainVisitors",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44372",
+					"path": [
+						"api",
+						"MainVisitors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44372/api/MainVisitors/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44372/api/MainVisitors/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44372",
+					"path": [
+						"api",
+						"MainVisitors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44372/api/MainVisitors/4",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44372/api/MainVisitors/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44372",
+					"path": [
+						"api",
+						"MainVisitors",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44372/api/MainVisitors?datefrom=20120112&dateto=20120112&username=test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44372/api/MainVisitors?datefrom=20120112&dateto=20120112&username=test",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44372",
+					"path": [
+						"api",
+						"MainVisitors"
+					],
+					"query": [
+						{
+							"key": "datefrom",
+							"value": "20120112"
+						},
+						{
+							"key": "dateto",
+							"value": "20120112"
+						},
+						{
+							"key": "username",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44372/api/MainVisitors?userName=test3&firstName=test3&lastName=test3&age=15&departmentId=1&visitorId=2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44372/api/MainVisitors?userName=test3&firstName=test3&lastName=test3&age=15&departmentId=1&visitorId=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44372",
+					"path": [
+						"api",
+						"MainVisitors"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": "test3"
+						},
+						{
+							"key": "firstName",
+							"value": "test3"
+						},
+						{
+							"key": "lastName",
+							"value": "test3"
+						},
+						{
+							"key": "age",
+							"value": "15"
+						},
+						{
+							"key": "departmentId",
+							"value": "1"
+						},
+						{
+							"key": "visitorId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44372/api/MainVisitors/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"userName\": \"test121\",\r\n  \"firstName\": \"test121\",\r\n  \"lastName\": \"test121\",\r\n  \"age\": 11,\r\n  \"departmentId\": 2,\r\n  \"typeofvisitorId\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44372/api/MainVisitors/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44372",
+					"path": [
+						"api",
+						"MainVisitors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
